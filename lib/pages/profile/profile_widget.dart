@@ -69,7 +69,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).info,
+            backgroundColor: Color(0xFFD1D4D6),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -95,7 +95,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
           onWillPop: () async => false,
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).info,
+            backgroundColor: Color(0xFFD1D4D6),
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(90.0),
               child: AppBar(
@@ -116,16 +116,17 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     padding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 16.0, 0.0),
                     child: Container(
-                      width: 44.0,
-                      height: 44.0,
+                      width: 80.0,
+                      height: 80.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).accent1,
+                        color: FlutterFlowTheme.of(context).secondaryText,
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: FlutterFlowTheme.of(context).primary,
+                          color: FlutterFlowTheme.of(context).primaryText,
                           width: 2.0,
                         ),
                       ),
+                      alignment: AlignmentDirectional(0.00, 0.00),
                       child: Padding(
                         padding:
                             EdgeInsetsDirectional.fromSTEB(2.0, 2.0, 2.0, 2.0),
@@ -643,7 +644,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFFD85824),
+                              color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
@@ -654,7 +655,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                   ),
                               elevation: 0.0,
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).alternate,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),

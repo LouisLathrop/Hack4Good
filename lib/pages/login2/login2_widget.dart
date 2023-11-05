@@ -263,7 +263,7 @@ class _Login2WidgetState extends State<Login2Widget> {
                                 }
 
                                 context.pushNamedAuth(
-                                    'profile', context.mounted);
+                                    'Dashboard', context.mounted);
                               },
                               text: 'Sign In',
                               options: FFButtonOptions(

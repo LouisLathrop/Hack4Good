@@ -1,7 +1,5 @@
 // Export pages
-export '/unusedfiles/login_page/login_page_widget.dart' show LoginPageWidget;
 export '/pages/profile/profile_widget.dart' show ProfileWidget;
-export '/messages/messages_widget.dart' show MessagesWidget;
 export '/pages/upcoming_events/upcoming_events_widget.dart'
     show UpcomingEventsWidget;
 export '/pages/login2/login2_widget.dart' show Login2Widget;

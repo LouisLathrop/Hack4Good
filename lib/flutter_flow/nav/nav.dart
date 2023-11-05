@@ -88,11 +88,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : Login2Widget(),
         ),
         FFRoute(
-          name: 'LoginPage',
-          path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
-        ),
-        FFRoute(
           name: 'profile',
           path: '/profile',
           requireAuth: true,
@@ -101,19 +96,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : ProfileWidget(),
         ),
         FFRoute(
-          name: 'Messages',
-          path: '/messages',
-          builder: (context, params) => MessagesWidget(),
-        ),
-        FFRoute(
           name: 'UpcomingEvents',
           path: '/upcomingEvents',
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'UpcomingEvents')
-              : NavBarPage(
-                  initialPage: 'UpcomingEvents',
-                  page: UpcomingEventsWidget(),
-                ),
+              : UpcomingEventsWidget(),
         ),
         FFRoute(
           name: 'Login2',

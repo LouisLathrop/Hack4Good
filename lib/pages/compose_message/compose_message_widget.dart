@@ -69,7 +69,7 @@ class _ComposeMessageWidgetState extends State<ComposeMessageWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed('Messages');
+              context.pushNamed('messages2');
             },
           ),
           title: Align(
@@ -282,6 +282,30 @@ class _ComposeMessageWidgetState extends State<ComposeMessageWidget> {
                     maxLength: 3000,
                     validator:
                         _model.textControllerValidator.asValidator(context),
+                  ),
+                ),
+                FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('messages2');
+                  },
+                  text: 'Send Message',
+                  options: FFButtonOptions(
+                    height: 40.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: FlutterFlowTheme.of(context).primary,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
               ],

@@ -246,10 +246,16 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Doctors Check In',
+                                                            'How to Communicate Better',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .headlineSmall,
+                                                                .headlineSmall
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  fontSize:
+                                                                      18.0,
+                                                                ),
                                                           ),
                                                         ),
                                                         Padding(
@@ -296,7 +302,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                             8.0,
                                                                             4.0),
                                                                     child: Text(
-                                                                      '2:20pm',
+                                                                      '9:30am',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -311,7 +317,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                 ),
                                                               ),
                                                               Text(
-                                                                'Wed, 03/08/2022',
+                                                                'Mon, 12/04/2023',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodySmall,
@@ -450,10 +456,16 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Check In',
+                                                            'Quiz',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .headlineSmall,
+                                                                .headlineSmall
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  fontSize:
+                                                                      18.0,
+                                                                ),
                                                           ),
                                                         ),
                                                         Row(
@@ -490,7 +502,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                           8.0,
                                                                           4.0),
                                                                   child: Text(
-                                                                    '2:20pm',
+                                                                    '6:00pm',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -513,7 +525,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                           0.0,
                                                                           0.0),
                                                               child: Text(
-                                                                'Wed, 03/08/2022',
+                                                                'Wed, 11/22/2023',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodySmall,
@@ -720,10 +732,16 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Doctors Check In',
+                                                            'How to Communicate Better',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .headlineSmall,
+                                                                .headlineSmall
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  fontSize:
+                                                                      18.0,
+                                                                ),
                                                           ),
                                                         ),
                                                         Padding(
@@ -770,7 +788,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                             8.0,
                                                                             4.0),
                                                                     child: Text(
-                                                                      '2:20pm',
+                                                                      '9:30am',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -778,14 +796,14 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                             fontFamily:
                                                                                 'Readex Pro',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).secondaryText,
                                                                           ),
                                                                     ),
                                                                   ),
                                                                 ),
                                                               ),
                                                               Text(
-                                                                'Wed, 03/08/2022',
+                                                                'Mon, 12/04/2023',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodySmall,
@@ -817,14 +835,27 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                       alignment:
                                                           AlignmentDirectional(
                                                               0.00, 0.00),
-                                                      child: Icon(
-                                                        Icons
-                                                            .add_photo_alternate_outlined,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
-                                                        size: 24.0,
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                              'EventDetails');
+                                                        },
+                                                        child: Icon(
+                                                          Icons
+                                                              .add_photo_alternate_outlined,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          size: 24.0,
+                                                        ),
                                                       ),
                                                     ),
                                                   ],
@@ -833,15 +864,6 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                             ),
                                           ),
                                         ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          16.0, 12.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Past Due',
-                                        style: FlutterFlowTheme.of(context)
-                                            .labelMedium,
                                       ),
                                     ),
                                     Padding(
@@ -903,10 +925,16 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                       0.0,
                                                                       0.0),
                                                           child: Text(
-                                                            'Check In',
+                                                            'Quiz',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .headlineSmall,
+                                                                .headlineSmall
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  fontSize:
+                                                                      18.0,
+                                                                ),
                                                           ),
                                                         ),
                                                         Row(
@@ -926,7 +954,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                     .antiAliasWithSaveLayer,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .accent1,
+                                                                    .primary,
                                                                 elevation: 0.0,
                                                                 shape:
                                                                     RoundedRectangleBorder(
@@ -943,7 +971,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                           8.0,
                                                                           4.0),
                                                                   child: Text(
-                                                                    '2:20pm',
+                                                                    '6:00pm',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -951,7 +979,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                           fontFamily:
                                                                               'Readex Pro',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).primary,
+                                                                              FlutterFlowTheme.of(context).secondaryText,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -966,7 +994,7 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                                           0.0,
                                                                           0.0),
                                                               child: Text(
-                                                                'Wed, 03/08/2022',
+                                                                'Wed, 11/22/2023',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodySmall,
@@ -998,14 +1026,27 @@ class _UpcomingEventsWidgetState extends State<UpcomingEventsWidget>
                                                       alignment:
                                                           AlignmentDirectional(
                                                               0.00, 0.00),
-                                                      child: Icon(
-                                                        Icons
-                                                            .add_photo_alternate_outlined,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
-                                                        size: 24.0,
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                              'EventDetails');
+                                                        },
+                                                        child: Icon(
+                                                          Icons
+                                                              .add_photo_alternate_outlined,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          size: 24.0,
+                                                        ),
                                                       ),
                                                     ),
                                                   ],
