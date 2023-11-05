@@ -121,10 +121,10 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'profile': ProfileWidget(),
-      'UpcomingEvents': UpcomingEventsWidget(),
       'Dashboard': DashboardWidget(),
+      'profile': ProfileWidget(),
       'messages2': Messages2Widget(),
+      'UpcomingEvents': UpcomingEventsWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -148,34 +148,36 @@ class _NavBarPageState extends State<NavBarPage> {
           activeColor: FlutterFlowTheme.of(context).secondaryText,
           tabBackgroundColor: Color(0xFF262525),
           tabBorderRadius: 100.0,
-          tabMargin: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          tabMargin: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 5.0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 5.0),
           gap: 0.0,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           duration: Duration(milliseconds: 500),
           haptic: false,
           tabs: [
             GButton(
-              icon: currentIndex == 0 ? Icons.person : Icons.person_outline,
-              text: '',
-              iconSize: 24.0,
-            ),
-            GButton(
-              icon: currentIndex == 1
-                  ? Icons.date_range_rounded
-                  : Icons.date_range_outlined,
-              text: '',
-              iconSize: 24.0,
-            ),
-            GButton(
               icon: Icons.home_outlined,
               text: '',
               iconSize: 24.0,
+              backgroundColor: Color(0x33FEF7F7),
+            ),
+            GButton(
+              icon: currentIndex == 1 ? Icons.person : Icons.person_outline,
+              text: '',
+              iconSize: 24.0,
+              backgroundColor: Color(0x33FEF7F7),
             ),
             GButton(
               icon: Icons.message,
               text: '',
               iconSize: 24.0,
+              backgroundColor: Color(0x33FEF7F7),
+            ),
+            GButton(
+              icon: Icons.date_range_outlined,
+              text: '',
+              iconSize: 24.0,
+              backgroundColor: Color(0x33FEF7F7),
             )
           ],
         ),

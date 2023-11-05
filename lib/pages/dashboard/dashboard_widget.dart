@@ -857,7 +857,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 16.0),
                                               child: Text(
-                                                'Below is a summary of your Cousre activity.',
+                                                'Below is a summary of your Course activity.',
                                                 textAlign: TextAlign.start,
                                                 style: FlutterFlowTheme.of(
                                                         context)
@@ -1005,7 +1005,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                               'Quizes this Week',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .labelMedium,
+                                                                  .labelMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                  ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
                                                                     'textOnPageLoadAnimation2']!),
@@ -1142,7 +1149,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                               'Week Counter',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .labelMedium,
+                                                                  .labelMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                  ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
                                                                     'textOnPageLoadAnimation4']!),
@@ -1280,7 +1294,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                               'Current Chapter',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .labelMedium,
+                                                                  .labelMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                  ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
                                                                     'textOnPageLoadAnimation6']!),
@@ -1533,7 +1554,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                 'Below is an a summary of activity.',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMedium,
+                                                                    .labelMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Readex Pro',
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                    ),
                                                               ).animateOnPageLoad(
                                                                   animationsMap[
                                                                       'textOnPageLoadAnimation12']!),
@@ -1748,7 +1776,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                 'Below is an a summary of activity.',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .labelMedium,
+                                                                    .labelMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Readex Pro',
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                    ),
                                                               ).animateOnPageLoad(
                                                                   animationsMap[
                                                                       'textOnPageLoadAnimation14']!),
