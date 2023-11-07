@@ -6,6 +6,8 @@ FlutterFlow projects are built to run on the Flutter _stable_ release.
 
 #Team: Code Crusaders
 
+COMPANION APP
+
 #Members:
 Aiden Stich
 Louis Lathrop
